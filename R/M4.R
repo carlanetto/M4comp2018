@@ -1,13 +1,12 @@
 #' M4 Competiotion data
 #'
 #' Featuring 100000 of diffrerent domains
-.
 #'
 #' @docType data
 #'
 #' @usage data(M4)
 #'
-#' @format An list of  \code{"cross"}; see \code{\link[qtl]{read.cross}}.
+#' @format A list of  objects with\code{"cross"}; see \code{\link[qtl]{read.cross}}.
 #'
 #' @keywords datasets
 #'
