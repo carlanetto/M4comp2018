@@ -1,11 +1,10 @@
 Package: Mcomp2018
 Type: Package
-Title: What the Package Does (Title Case)
+Title:  Data from the M4-Competition
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Pablo Montero-Manso, Carla Netto, Thiyanga Talagala
+Maintainer: The package maintainer <p.montero.manso@udc.es>
+Description: The 100000 time series from the M4-competition (Makridakis et al. 1982)
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
