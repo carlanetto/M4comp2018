@@ -18,4 +18,8 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 ## basic example code
+data(M4)
+names(M4[[1]])
+#extract yearly series
+yearly_M4 <- Filter(function(l) l$perriod == "Yearly", M4)
 ```
