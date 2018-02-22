@@ -1,6 +1,6 @@
 Package: Mcomp2018
 Type: Package
-Title:  Data from the M4-Competition
+Title: Data from the M4-Competition
 Version: 0.1.0
 Author: Pablo Montero-Manso, Carla Netto, Thiyanga Talagala
 Maintainer: The package maintainer <p.montero.manso@udc.es>
@@ -8,3 +8,4 @@ Description: The 100000 time series from the M4-competition (Makridakis et al. 1
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.0.1.9000
