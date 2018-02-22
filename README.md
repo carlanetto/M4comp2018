@@ -1,6 +1,6 @@
 # Mcomp2018
 
-The goal of Mcomp2018 is to ...
+The R package Mcomp contains the 100000 time series from the M4-competition. 
 
 ## Installation
 
