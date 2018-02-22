@@ -12,7 +12,7 @@
 data(M4)
 }
 \description{
-Featuring 100000 of diffrerent domains
+Featuring 100000 of different domains
 }
 \examples{
 data(M4)
