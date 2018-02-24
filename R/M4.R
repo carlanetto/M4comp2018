@@ -1,7 +1,8 @@
-#' M4 Competiotion data
+#' M4 Competition data
 #'
 #' Featuring 100000 time series from different domains
 #'
+#' @rdname M4
 #' @docType data
 #'
 #' @usage data(M4)
@@ -24,7 +25,7 @@
 #'
 #' @keywords datasets
 #'
-#' @references Moore et al. (2013) Genetics 195:1077-1086
+#' @references
 #' (\href{https://www.m4.unic.ac.cy/resources/makridakis-competitions/}{M4 Competition Web})
 #'
 #' @source \href{https://www.m4.unic.ac.cy/the-dataset/}{M4 Competition Dataset}
@@ -33,5 +34,5 @@
 #' data(M4)
 #' names(M4[[1]])
 #' #extract yearly series
-#' yearly_M4 <- Filter(function(l) l$perriod == "Yearly", M4)
+#' yearly_M4 <- Filter(function(l) l$period == "Yearly", M4)
 "M4"
