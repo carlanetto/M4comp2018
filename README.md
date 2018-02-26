@@ -21,5 +21,5 @@ This is a basic example which shows you how to solve a common problem:
 data(M4)
 names(M4[[1]])
 #extract yearly series
-yearly_M4 <- Filter(function(l) l$perriod == "Yearly", M4)
+yearly_M4 <- Filter(function(l) l$period == "Yearly", M4)
 ```
