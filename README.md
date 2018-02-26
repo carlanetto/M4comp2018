@@ -1,15 +1,15 @@
-# Mcomp2018
+# M4comp2018
 
-The R package Mcomp contains the 100000 time series from the M4-competition. 
+The R package M4comp2018 contains the 100000 time series from the M4-competition. 
 
 ## Installation
 
-You can install Mcomp2018 from github with:
+You can install M4comp2018 from github with:
 
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("carlanetto/Mcomp2018")
+devtools::install_github("carlanetto/M4comp2018")
 ```
 
 ## Example
