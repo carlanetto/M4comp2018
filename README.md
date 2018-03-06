@@ -25,7 +25,7 @@ This is a basic example which shows you how to solve a common problem:
 library(M4comp2018)
 data(M4)
 names(M4[[1]])
-#> [1] "x"      "st"     "type"   "period" "h"      "sn"
+#> [1] "st"     "x"      "n"      "type"   "h"      "period"
 #extract yearly series
 yearly_M4 <- Filter(function(l) l$period == "Yearly", M4)
 ```
