@@ -1,48 +1,39 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+M4comp2018
+==========
 
-```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "README-"
-)
-```
+The R package M4comp2018 contains the 100000 time series from the M4-competition.
 
-# M4comp2018
-
-The R package M4comp2018 contains the 100000 time series from the M4-competition. 
-
-## Installation
+Installation
+------------
 
 You can install M4comp2018 from github with:
 
-```{r gh-installation, eval = FALSE}
+``` r
 # install.packages("devtools")
 devtools::install_github("carlanetto/M4comp2018")
 ```
 
-
-## Example
+Example
+-------
 
 This is a basic example which shows you how to solve a common problem:
 
-```{r}
+``` r
 ## basic example code
 library(M4comp2018)
 data(M4)
 names(M4[[1]])
+#> [1] "x"      "st"     "type"   "period" "h"      "sn"
 #extract yearly series
 yearly_M4 <- Filter(function(l) l$period == "Yearly", M4)
 ```
 
-```{r}
+``` r
 library(ggplot2)
 library(forecast)
 autoplot(M4[[40773]]$x)
 ```
 
-
+![](README-unnamed-chunk-3-1.png)
