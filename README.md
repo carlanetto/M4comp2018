@@ -42,7 +42,7 @@ autoplot(M4[[40773]]$x)
 
 ``` r
 #read the help file
-??M4comp2018
+?M4comp2018
 #> starting httpd help server ... done
 ```
 
