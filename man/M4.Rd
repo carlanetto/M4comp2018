@@ -32,6 +32,9 @@ Featuring 100000 time series from different domains
 
 The 100000 time series from the M4-competition (Makridakis et al. 1982)
 }
+\note{
+Series start date is not provided in the competition; in this package it is assumed to be the first period in the year (e.g., January for monthly data).
+}
 \examples{
 data(M4)
 names(M4[[1]])

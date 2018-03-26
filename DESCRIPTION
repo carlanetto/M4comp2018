@@ -4,7 +4,7 @@ Title: Data from the M4-Competition
 Version: 0.1.0
 Author: Pablo Montero-Manso, Carla Netto, Thiyanga Talagala
 Maintainer: The package maintainer <p.montero.manso@udc.es>
-Description: The 100000 time series from the M4-competition (Makridakis et al. 1982)
+Description: The 100000 time series from the M4-competition (https://www.m4.unic.ac.cy/)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
