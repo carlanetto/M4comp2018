@@ -23,6 +23,7 @@
 #'   \item{x}{A time series of length \code{n} (the historical data)}
 #' }
 #'
+#'@note Series start date is not provided in the competition; in this package it is assumed to be the first period in the year (e.g., January for monthly data).
 #' @keywords datasets
 #'
 #' @references
