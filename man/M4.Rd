@@ -20,6 +20,7 @@ Each series within \code{M4} is an object with the following structure:
             Possible values are "Demographic", "Finance", "Industry", "Macro",
             "Micro" & "Other".}
   \item{x}{A time series of length \code{n} (the historical data)}
+  \item{x}{A time series of length \code{h} (the future data)}
 }}
 \source{
 \href{https://www.m4.unic.ac.cy/the-dataset/}{M4 Competition Dataset}
@@ -30,10 +31,12 @@ data(M4)
 \description{
 Featuring 100000 time series from different domains
 
-The 100000 time series from the M4-competition (Makridakis et al. 1982)
+The 100000 time series from the M4-competition (https://www.m4.unic.ac.cy/)
 }
 \note{
-Series start date is not provided in the competition; in this package it is assumed to be the first period in the year (e.g., January for monthly data).
+Series start is provided in year format for Yearly, Monthly and Quarterly series.
+For Daily and Hourly series, it is given in the number of days after 1970-01-01 and for Weekly data
+it is given in number of weeks since 1970-01-01.
 }
 \examples{
 data(M4)

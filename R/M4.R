@@ -21,9 +21,12 @@
 #'             Possible values are "Demographic", "Finance", "Industry", "Macro",
 #'             "Micro" & "Other".}
 #'   \item{x}{A time series of length \code{n} (the historical data)}
+#'   \item{x}{A time series of length \code{h} (the future data)}
 #' }
 #'
-#'@note Series start date is not provided in the competition; in this package it is assumed to be the first period in the year (e.g., January for monthly data).
+#'@note Series start is provided in year format for Yearly, Monthly and Quarterly series.
+#' For Daily and Hourly series, it is given in the number of days after 1970-01-01 and for Weekly data
+#' it is given in number of weeks since 1970-01-01.
 #' @keywords datasets
 #'
 #' @references

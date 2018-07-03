@@ -3,12 +3,12 @@
 M4comp2018
 ==========
 
-The R package M4comp2018 contains the 100000 time series from the M4-competition.
+The R package M4comp2018 contains the 100000 time series from the M4-competition. It also includes the true future values (the test part).
 
 Installation
 ------------
 
-Development version with latest features:
+Development version with the latest features:
 
 ``` r
 # install.packages("devtools")
@@ -25,25 +25,27 @@ This is a basic example which shows you how to solve a common problem:
 library(M4comp2018)
 data(M4)
 names(M4[[1]])
-#> [1] "st"     "x"      "n"      "type"   "h"      "period"
+#> [1] "st"     "x"      "n"      "type"   "h"      "period" "xx"
 #extract yearly series
 yearly_M4 <- Filter(function(l) l$period == "Yearly", M4)
 ```
 
 ``` r
-#plot one of the series
-
+#plot one of the series, in red the future data
+#in black, the hitorical data
 library(ggplot2)
 library(forecast)
-autoplot(M4[[40773]]$x)
+plot(ts(c(M4[[40773]]$x, M4[[40773]]$xx),
+        start=start(M4[[40773]]$x), frequency = frequency(M4[[40773]]$x)),
+        col="red", type="l", ylab="")
+lines(M4[[40773]]$x, col="black")
 ```
 
 ![](README-unnamed-chunk-3-1.png)
 
 ``` r
-#read the help file
+#read the help file for documentation
 ?M4comp2018
-#> starting httpd help server ... done
 ```
 
 License
