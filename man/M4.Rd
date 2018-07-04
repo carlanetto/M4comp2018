@@ -20,7 +20,7 @@ Each series within \code{M4} is an object with the following structure:
             Possible values are "Demographic", "Finance", "Industry", "Macro",
             "Micro" & "Other".}
   \item{x}{A time series of length \code{n} (the historical data)}
-  \item{x}{A time series of length \code{h} (the future data)}
+  \item{xx}{A time series of length \code{h} (the future data)}
 }}
 \source{
 \href{https://www.m4.unic.ac.cy/the-dataset/}{M4 Competition Dataset}

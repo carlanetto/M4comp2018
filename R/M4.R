@@ -21,7 +21,7 @@
 #'             Possible values are "Demographic", "Finance", "Industry", "Macro",
 #'             "Micro" & "Other".}
 #'   \item{x}{A time series of length \code{n} (the historical data)}
-#'   \item{x}{A time series of length \code{h} (the future data)}
+#'   \item{xx}{A time series of length \code{h} (the future data)}
 #' }
 #'
 #'@note Series start is provided in year format for Yearly, Monthly and Quarterly series.
