@@ -22,6 +22,15 @@
 #'             "Micro" & "Other".}
 #'   \item{x}{A time series of length \code{n} (the historical data)}
 #'   \item{xx}{A time series of length \code{h} (the future data)}
+#'   \item{pt_ff}{A 25xh matrix with the top 25 submissions to the M4 Competition, one on each row.
+#'    Information can be found in the \code{submission_info} data.frame included in the package.
+#'    Includes some benchmark methods such as Theta of ARIMA.
+#'    The order of the rows is the rank in competition, e.g. best method is in row 1.}
+#'    \item{up_ff}{A matrix containing the upper bound for the prediction intervals of the submissions.
+#'                The row are ordered is the same as in \code{pt_ff}, not by their prediction interval performance.
+#'                Partipants that submitted point forecasts but not prediction intervals have NAs in their row.}
+#'    \item{low_ff}{A matrix similar to \code{up_ff} but with the lower bounds of the prediction intervals.}
+#'    
 #' }
 #'
 #'@note Series start is provided in year format for Yearly, Monthly and Quarterly series.
@@ -31,7 +40,8 @@
 #'
 #' @references
 #' (\href{https://www.m4.unic.ac.cy/resources/makridakis-competitions/}{M4 Competition Web})
-#'
+#' (\href{https://github.com/M4Competition/M4-methods}{M4 Competition GitHub Repository})
+#' 
 #' @source \href{https://www.m4.unic.ac.cy/the-dataset/}{M4 Competition Dataset}
 #'
 #' @examples

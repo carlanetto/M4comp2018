@@ -1,11 +1,13 @@
 Package: M4comp2018
 Type: Package
 Title: Data from the M4-Competition
-Version: 0.1.0
+Version: 0.2.0
 Author: Pablo Montero-Manso, Carla Netto, Thiyanga Talagala
 Maintainer: The package maintainer <p.montero.manso@udc.es>
-Description: The 100000 time series from the M4-competition (https://www.m4.unic.ac.cy/)
+Description: The 100000 time series from the M4-competition. Includes the submitted forecasts (https://www.m4.unic.ac.cy/)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1.9000
+Depends:
+    R (>= 2.15)
+RoxygenNote: 6.1.1

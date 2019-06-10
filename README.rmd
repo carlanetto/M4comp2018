@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 # M4comp2018
 
 The R package M4comp2018 contains the 100000 time series from the M4-competition.
-It also includes the true future values (the test part).
+It also includes the true future values (the test part) and the  submitted forecasts of the top25 participants.
 
 ## Installation
 
@@ -29,10 +29,12 @@ devtools::install_github("carlanetto/M4comp2018")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+
+The `M4` object is a list with the series. Each element of this list is also a list with some components, like the 
+series, the future values, type and domain and the submitted forecasts.
 
 ```{r}
-## basic example code
+## check the components of the least
 library(M4comp2018)
 data(M4)
 names(M4[[1]])
@@ -55,6 +57,20 @@ lines(M4[[40773]]$x, col="black")
 ```{r eval=FALSE}
 #read the help file for documentation
 ?M4comp2018
+```
+
+You can check the point forecasts subissions in the `$pt_ff` of each element of the list. Info about the
+submissions is in the submission_info dataframe, the order of `$pt_ff` is the OWA ranking. Upper and Lower bound prediction intervals are found in `$up_ff` and `$low_ff` respectively.
+
+```{r eval=FALSE}
+?submission_info
+```
+
+```{r eval=TRUE}
+M4[[1]]$pt_ff[1:3, ]
+data(submission_info)
+#check some info about top 3 sumbissions
+submission_info[1:3,]
 ```
 
 ## License
