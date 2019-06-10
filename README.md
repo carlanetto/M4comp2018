@@ -32,8 +32,6 @@ yearly_M4 <- Filter(function(l) l$period == "Yearly", M4)
 ``` r
 #plot one of the series, in red the future data
 #in black, the hitorical data
-library(ggplot2)
-library(forecast)
 plot(ts(c(M4[[40773]]$x, M4[[40773]]$xx),
         start=start(M4[[40773]]$x), frequency = frequency(M4[[40773]]$x)),
         col="red", type="l", ylab="")

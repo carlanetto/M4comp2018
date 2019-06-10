@@ -6,9 +6,9 @@
 #'
 #' @usage data(submission_info)
 #'
-#' @format submission_info is data.frame with info about the 61 participant in the M4, includes benchmark methods.
+#' @format submission_info is data.frame with info about the 61 participants in the M4, includes benchmark methods.
 #' The data.frame has the following columns.
-#' #' \describe{
+#'  \describe{
 #'   \item{ID}{A number assigned to identify the submission in the competition repository.}
 #'   \item{Type}{A Factor. Whether the method is self-labeled as Statistical, Combination, Machine Learning or Hybrid. }
 #'   \item{Author}{Name of author(s)}
